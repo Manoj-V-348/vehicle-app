@@ -393,7 +393,7 @@ const styles = StyleSheet.create({
   vehiclePrice: {
     ...textPresets.title3,
     color: colors.primary,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
   freeBadge: {
     backgroundColor: colors.success,
@@ -405,7 +405,7 @@ const styles = StyleSheet.create({
   freeBadgeText: {
     ...textPresets.caption1,
     color: colors.white,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
   formSection: {
     backgroundColor: colors.white,
@@ -421,7 +421,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
     marginBottom: 16,
   },
   sectionTitleMargin: {
@@ -433,7 +433,7 @@ const styles = StyleSheet.create({
   inputLabel: {
     ...textPresets.subheadline,
     color: colors.text,
-    fontWeight: '500' as const,
+    fontWeight: '500',
     marginBottom: 8,
   },
   inputWrapper: {
@@ -503,7 +503,7 @@ const styles = StyleSheet.create({
   },
   termsLink: {
     color: colors.primary,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   summaryCard: {
     backgroundColor: colors.white,
@@ -529,7 +529,7 @@ const styles = StyleSheet.create({
   summaryValue: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   summaryDivider: {
     height: 1,
@@ -539,12 +539,12 @@ const styles = StyleSheet.create({
   summaryTotal: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
   summaryTotalAmount: {
     ...textPresets.title3,
     color: colors.primary,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
   bottomBar: {
     backgroundColor: colors.white,
@@ -572,7 +572,7 @@ const styles = StyleSheet.create({
   submitButtonText: {
     ...textPresets.callout,
     color: colors.white,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
 });
 

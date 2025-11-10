@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
   text: {
     ...textPresets.callout,
     color: colors.white,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   smallText: {
     fontSize: 14,

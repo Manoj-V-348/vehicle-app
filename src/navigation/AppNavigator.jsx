@@ -68,7 +68,7 @@ const UserTabs = () => {
         },
         tabBarLabelStyle: {
           fontSize: 11,
-          fontWeight: '500' as const,
+          fontWeight: '500',
         },
       }}
     >
@@ -120,7 +120,7 @@ const AdminTabs = () => {
         },
         tabBarLabelStyle: {
           fontSize: 11,
-          fontWeight: '500' as const,
+          fontWeight: '500',
         },
       }}
     >

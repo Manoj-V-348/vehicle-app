@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
   statNumber: {
     ...textPresets.title2,
     color: colors.white,
-    fontWeight: '700' as const,
+    fontWeight: '700',
     marginBottom: 4,
   },
   statLabel: {
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
   seeAllText: {
     ...textPresets.callout,
     color: colors.primary,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   categoriesContainer: {
     paddingHorizontal: 16,
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
   categoryText: {
     ...textPresets.subheadline,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   quickActionsContainer: {
     flexDirection: 'row',

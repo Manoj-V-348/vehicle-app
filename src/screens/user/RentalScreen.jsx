@@ -439,7 +439,7 @@ const styles = StyleSheet.create({
   priceAmount: {
     ...textPresets.title3,
     color: colors.white,
-    fontWeight: '700' as const,
+    fontWeight: '700',
     textAlign: 'center',
   },
   priceLabel: {
@@ -489,7 +489,7 @@ const styles = StyleSheet.create({
   durationTitle: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
     marginBottom: 4,
   },
   durationTitleSelected: {
@@ -531,7 +531,7 @@ const styles = StyleSheet.create({
   pickerLabel: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
     marginBottom: 12,
   },
   dateScroll: {
@@ -562,7 +562,7 @@ const styles = StyleSheet.create({
   dateLabel: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   dateLabelSelected: {
     color: colors.white,
@@ -582,7 +582,7 @@ const styles = StyleSheet.create({
   durationText: {
     ...textPresets.callout,
     color: colors.primary,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   timeScroll: {
     gap: 8,
@@ -605,7 +605,7 @@ const styles = StyleSheet.create({
   timeText: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   timeTextSelected: {
     color: colors.white,
@@ -634,7 +634,7 @@ const styles = StyleSheet.create({
   addonTitle: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
     marginBottom: 4,
   },
   addonDescription: {
@@ -664,7 +664,7 @@ const styles = StyleSheet.create({
   summaryTitle: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
     marginBottom: 16,
   },
   summaryRow: {
@@ -680,7 +680,7 @@ const styles = StyleSheet.create({
   summaryValue: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600' as const,
+    fontWeight: '600',
   },
   summaryDivider: {
     height: 1,
@@ -690,12 +690,12 @@ const styles = StyleSheet.create({
   summaryTotal: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
   summaryTotalAmount: {
     ...textPresets.title3,
     color: colors.primary,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
   bottomBar: {
     flexDirection: 'row',
@@ -718,7 +718,7 @@ const styles = StyleSheet.create({
   bottomAmount: {
     ...textPresets.title3,
     color: colors.text,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
   confirmButton: {
     flex: 1,
@@ -740,7 +740,7 @@ const styles = StyleSheet.create({
   confirmButtonText: {
     ...textPresets.callout,
     color: colors.white,
-    fontWeight: '700' as const,
+    fontWeight: '700',
   },
 });
 
