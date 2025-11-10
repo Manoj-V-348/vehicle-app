@@ -295,7 +295,7 @@ const styles = StyleSheet.create({
   tabText: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   tabTextActive: {
     color: colors.white,
@@ -314,7 +314,7 @@ const styles = StyleSheet.create({
   tabBadgeText: {
     ...textPresets.caption1,
     color: colors.text,
-    fontWeight: '700',
+    fontWeight: 700,
   },
   tabBadgeTextActive: {
     color: colors.white,
@@ -367,7 +367,7 @@ const styles = StyleSheet.create({
   vehicleName: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: 600,
     marginBottom: 6,
   },
   bookingMeta: {
@@ -391,7 +391,7 @@ const styles = StyleSheet.create({
   },
   statusText: {
     ...textPresets.caption1,
-    fontWeight: '700',
+    fontWeight: 700,
   },
   bookingDetails: {
     padding: 16,
@@ -412,7 +412,7 @@ const styles = StyleSheet.create({
   detailValue: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   detailValueRow: {
     flexDirection: 'row',
@@ -439,7 +439,7 @@ const styles = StyleSheet.create({
   dateRangeValue: {
     ...textPresets.subheadline,
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   bookingFooter: {
     flexDirection: 'row',
@@ -458,7 +458,7 @@ const styles = StyleSheet.create({
   amountValue: {
     ...textPresets.title3,
     color: colors.primary,
-    fontWeight: '700',
+    fontWeight: 700,
   },
   actionButtons: {
     flexDirection: 'row',
@@ -473,7 +473,7 @@ const styles = StyleSheet.create({
   actionButtonPrimaryText: {
     ...textPresets.subheadline,
     color: colors.white,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   actionButtonSecondary: {
     flexDirection: 'row',
@@ -487,7 +487,7 @@ const styles = StyleSheet.create({
   actionButtonSecondaryText: {
     ...textPresets.subheadline,
     color: colors.primary,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   emptyState: {
     flex: 1,

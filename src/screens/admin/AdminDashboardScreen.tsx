@@ -412,7 +412,7 @@ const styles = StyleSheet.create({
   notificationBadgeText: {
     ...textPresets.caption2,
     color: colors.white,
-    fontWeight: '700',
+    fontWeight: 700,
   },
   quickActionsContainer: {
     flexDirection: 'row',
@@ -462,7 +462,7 @@ const styles = StyleSheet.create({
   seeAllText: {
     ...textPresets.callout,
     color: colors.primary,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   statsGrid: {
     flexDirection: 'row',
@@ -501,7 +501,7 @@ const styles = StyleSheet.create({
   statValue: {
     ...textPresets.title3,
     color: colors.text,
-    fontWeight: '700',
+    fontWeight: 700,
   },
   trendContainer: {
     flexDirection: 'row',
@@ -511,7 +511,7 @@ const styles = StyleSheet.create({
   trendText: {
     ...textPresets.caption2,
     marginLeft: 4,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   chartCard: {
     backgroundColor: colors.white,

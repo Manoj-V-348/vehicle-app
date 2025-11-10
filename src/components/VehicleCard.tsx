@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
   badgeText: {
     color: colors.white,
     fontSize: 12,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   unavailableBadge: {
     position: 'absolute',
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   unavailableText: {
     color: colors.white,
     fontSize: 12,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   content: {
     padding: 16,
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
   price: {
     ...textPresets.title3,
     color: colors.primary,
-    fontWeight: '700',
+    fontWeight: 700,
   },
   rentalPrice: {
     alignItems: 'flex-end',
@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
   rentalAmount: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: 600,
   },
 });
 

@@ -24,10 +24,10 @@ export const typography = {
 
   // Font weights
   fontWeight: {
-    regular: '400',
-    medium: '500',
-    semibold: '600',
-    bold: '700',
+    regular: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
   },
 
   // Line heights

@@ -543,7 +543,7 @@ const styles = StyleSheet.create({
   },
   availabilityText: {
     ...textPresets.caption1,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   vehicleStats: {
     flexDirection: 'row',
@@ -576,7 +576,7 @@ const styles = StyleSheet.create({
   priceValue: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: '700',
+    fontWeight: 700,
   },
   actionButtons: {
     flexDirection: 'row',
@@ -605,7 +605,7 @@ const styles = StyleSheet.create({
   actionButtonText: {
     ...textPresets.callout,
     color: colors.white,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   emptyContainer: {
     alignItems: 'center',
@@ -678,7 +678,7 @@ const styles = StyleSheet.create({
   },
   filterChipTextActive: {
     color: colors.primary,
-    fontWeight: '600',
+    fontWeight: 600,
   },
   applyButton: {
     backgroundColor: colors.primary,
@@ -690,7 +690,7 @@ const styles = StyleSheet.create({
   applyButtonText: {
     ...textPresets.headline,
     color: colors.white,
-    fontWeight: '600',
+    fontWeight: 600,
   },
 });
 
