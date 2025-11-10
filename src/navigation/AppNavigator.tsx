@@ -191,7 +191,6 @@ const AppNavigator = () => {
           options={{
             headerShown: true,
             headerTitle: 'Search Vehicles',
-            headerLargeTitle: true,
           }}
         />
         <Stack.Screen
