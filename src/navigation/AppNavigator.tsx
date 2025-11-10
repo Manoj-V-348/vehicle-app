@@ -166,7 +166,6 @@ const AppNavigator = () => {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
-          animation: 'slide_from_right',
         }}
       >
         <Stack.Screen name="Login">
@@ -179,10 +178,7 @@ const AppNavigator = () => {
           name="VehicleDetail"
           component={VehicleDetailScreen}
           options={{
-            headerShown: true,
-            headerTitle: '',
-            headerTransparent: true,
-            headerTintColor: colors.white,
+            headerShown: false,
           }}
         />
         <Stack.Screen
@@ -199,7 +195,6 @@ const AppNavigator = () => {
           options={{
             headerShown: true,
             headerTitle: 'Book Vehicle',
-            presentation: 'modal',
           }}
         />
         <Stack.Screen
@@ -208,7 +203,6 @@ const AppNavigator = () => {
           options={{
             headerShown: true,
             headerTitle: 'Rent Vehicle',
-            presentation: 'modal',
           }}
         />
         <Stack.Screen
@@ -217,7 +211,6 @@ const AppNavigator = () => {
           options={{
             headerShown: true,
             headerTitle: 'Payment',
-            presentation: 'modal',
           }}
         />
         <Stack.Screen
@@ -234,7 +227,6 @@ const AppNavigator = () => {
           options={{
             headerShown: true,
             headerTitle: 'Add Vehicle',
-            presentation: 'modal',
           }}
         />
         <Stack.Screen
