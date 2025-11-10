@@ -364,7 +364,7 @@ const styles = StyleSheet.create({
   filterBadgeText: {
     ...textPresets.caption2,
     color: colors.white,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
   filtersPanel: {
     maxHeight: 400,
@@ -387,7 +387,7 @@ const styles = StyleSheet.create({
   filterTitle: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   filterChips: {
     flexDirection: 'row',
@@ -409,7 +409,7 @@ const styles = StyleSheet.create({
   filterChipText: {
     ...textPresets.subheadline,
     color: colors.text,
-    fontWeight: 500,
+    fontWeight: '500' as const,
   },
   filterChipTextActive: {
     color: colors.white,
@@ -453,7 +453,7 @@ const styles = StyleSheet.create({
   },
   priceOptionTextActive: {
     color: colors.primary,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   clearFiltersButton: {
     flexDirection: 'row',
@@ -465,7 +465,7 @@ const styles = StyleSheet.create({
   clearFiltersText: {
     ...textPresets.callout,
     color: colors.primary,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   resultsSection: {
     flex: 1,
@@ -481,12 +481,12 @@ const styles = StyleSheet.create({
   resultsCount: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   clearText: {
     ...textPresets.callout,
     color: colors.primary,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   listContent: {
     paddingBottom: 20,
@@ -518,7 +518,7 @@ const styles = StyleSheet.create({
   resetButtonText: {
     ...textPresets.callout,
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
 });
 

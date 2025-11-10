@@ -445,7 +445,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   scrollView: {
     flex: 1,
@@ -479,7 +479,7 @@ const styles = StyleSheet.create({
   availabilityTitle: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   availabilitySubtitle: {
     ...textPresets.caption1,
@@ -526,7 +526,7 @@ const styles = StyleSheet.create({
     ...textPresets.callout,
     color: colors.text,
     marginBottom: 8,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   required: {
     color: colors.danger,
@@ -582,7 +582,7 @@ const styles = StyleSheet.create({
   },
   selectorOptionTextActive: {
     color: colors.primary,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   row: {
     flexDirection: 'row',
@@ -608,7 +608,7 @@ const styles = StyleSheet.create({
   submitButtonText: {
     ...textPresets.headline,
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
 });
 

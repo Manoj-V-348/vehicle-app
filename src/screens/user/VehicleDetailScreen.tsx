@@ -364,7 +364,7 @@ const styles = StyleSheet.create({
   statusText: {
     ...textPresets.callout,
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   content: {
     backgroundColor: colors.white,
@@ -409,7 +409,7 @@ const styles = StyleSheet.create({
   ratingText: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
     marginLeft: 4,
   },
   reviewsText: {
@@ -439,12 +439,12 @@ const styles = StyleSheet.create({
   priceAmount: {
     ...textPresets.title3,
     color: colors.primary,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
   rentalAmount: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   specsGrid: {
     flexDirection: 'row',
@@ -477,7 +477,7 @@ const styles = StyleSheet.create({
   specValue: {
     ...textPresets.footnote,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
     textAlign: 'center',
   },
   section: {
@@ -521,7 +521,7 @@ const styles = StyleSheet.create({
     ...textPresets.headline,
     color: colors.text,
     marginLeft: 12,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   availabilityText: {
     ...textPresets.body,
@@ -565,7 +565,7 @@ const styles = StyleSheet.create({
   secondaryButtonText: {
     ...textPresets.callout,
     color: colors.primary,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   primaryButton: {
     flex: 1.2,
@@ -580,7 +580,7 @@ const styles = StyleSheet.create({
   primaryButtonText: {
     ...textPresets.callout,
     color: colors.white,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
 });
 

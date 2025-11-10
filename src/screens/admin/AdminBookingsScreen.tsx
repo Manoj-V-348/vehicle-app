@@ -523,7 +523,7 @@ const styles = StyleSheet.create({
   statValue: {
     ...textPresets.title3,
     color: colors.text,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
   statLabel: {
     ...textPresets.caption1,
@@ -574,7 +574,7 @@ const styles = StyleSheet.create({
   },
   filterChipTextActive: {
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   listContainer: {
     padding: 16,
@@ -620,7 +620,7 @@ const styles = StyleSheet.create({
   },
   statusText: {
     ...textPresets.caption1,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   bookingDetails: {
     gap: 8,
@@ -651,7 +651,7 @@ const styles = StyleSheet.create({
   amountValue: {
     ...textPresets.title3,
     color: colors.primary,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
   quickActions: {
     flexDirection: 'row',
@@ -727,7 +727,7 @@ const styles = StyleSheet.create({
   modalValue: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   modalActions: {
     paddingHorizontal: 20,
@@ -746,7 +746,7 @@ const styles = StyleSheet.create({
   confirmButtonText: {
     ...textPresets.headline,
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   cancelButton: {
     backgroundColor: colors.danger + '15',
@@ -760,7 +760,7 @@ const styles = StyleSheet.create({
   cancelButtonText: {
     ...textPresets.headline,
     color: colors.danger,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
 });
 

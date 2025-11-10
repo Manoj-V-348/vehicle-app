@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
   summaryTitle: {
     ...textPresets.title3,
     color: colors.white,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
   summaryDivider: {
     height: 1,
@@ -422,7 +422,7 @@ const styles = StyleSheet.create({
   vehicleValue: {
     ...textPresets.headline,
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   summaryAmount: {
     backgroundColor: 'rgba(255,255,255,0.2)',
@@ -435,12 +435,12 @@ const styles = StyleSheet.create({
   amountLabel: {
     ...textPresets.callout,
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   amountValue: {
     ...textPresets.title2,
     color: colors.white,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
   section: {
     marginBottom: 24,
@@ -485,7 +485,7 @@ const styles = StyleSheet.create({
   methodLabel: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   methodLabelActive: {
     color: colors.primary,
@@ -511,7 +511,7 @@ const styles = StyleSheet.create({
   inputLabel: {
     ...textPresets.subheadline,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
     marginBottom: 8,
   },
   inputWrapper: {
@@ -573,7 +573,7 @@ const styles = StyleSheet.create({
   infoTitle: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
     marginTop: 16,
     marginBottom: 8,
   },
@@ -594,7 +594,7 @@ const styles = StyleSheet.create({
   securityText: {
     ...textPresets.subheadline,
     color: colors.success,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   bottomBar: {
     backgroundColor: colors.white,
@@ -622,7 +622,7 @@ const styles = StyleSheet.create({
   payButtonText: {
     ...textPresets.headline,
     color: colors.white,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
   processingContainer: {
     alignItems: 'center',
@@ -632,7 +632,7 @@ const styles = StyleSheet.create({
   processingText: {
     ...textPresets.callout,
     color: colors.primary,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
 });
 

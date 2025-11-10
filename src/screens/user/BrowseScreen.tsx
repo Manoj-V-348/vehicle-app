@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   filterChipText: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   filterChipTextActive: {
     color: colors.white,

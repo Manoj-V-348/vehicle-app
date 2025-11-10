@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
   memberText: {
     ...textPresets.caption1,
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
   editButton: {
     width: 40,
@@ -385,7 +385,7 @@ const styles = StyleSheet.create({
   statNumber: {
     ...textPresets.title3,
     color: colors.text,
-    fontWeight: 700,
+    fontWeight: '700' as const,
     marginBottom: 4,
   },
   statLabel: {
@@ -404,7 +404,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     ...textPresets.headline,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
     marginBottom: 12,
   },
   menuCard: {
@@ -439,7 +439,7 @@ const styles = StyleSheet.create({
   menuTitle: {
     ...textPresets.callout,
     color: colors.text,
-    fontWeight: 600,
+    fontWeight: '600' as const,
     marginBottom: 2,
   },
   menuSubtitle: {
@@ -466,7 +466,7 @@ const styles = StyleSheet.create({
   logoutText: {
     ...textPresets.callout,
     color: colors.danger,
-    fontWeight: 700,
+    fontWeight: '700' as const,
   },
   footer: {
     ...textPresets.caption2,

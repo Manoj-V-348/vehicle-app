@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
   demoButtonText: {
     ...textPresets.subheadline,
     color: colors.white,
-    fontWeight: 600,
+    fontWeight: '600' as const,
   },
 });
 
