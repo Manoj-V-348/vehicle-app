@@ -21,7 +21,6 @@ import type { RootStackParamList } from '../../navigation/AppNavigator';
 const { width, height } = Dimensions.get('window');
 const IMAGE_HEIGHT = height * 0.45;
 
-type Props = NativeStackScreenProps<RootStackParamList, 'VehicleDetail'>;
 
 const VehicleDetailScreen= ({ route, navigation }) => {
   const { vehicleId } = route.params;

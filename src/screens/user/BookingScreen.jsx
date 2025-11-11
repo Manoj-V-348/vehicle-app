@@ -19,7 +19,6 @@ import { mockVehicles } from '../../data/mockVehicles';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../../navigation/AppNavigator';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'Booking'>;
 
 const BookingScreen= ({ route, navigation }) => {
   const { vehicleId, bookingType } = route.params;

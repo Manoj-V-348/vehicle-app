@@ -15,7 +15,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
 import { mockVehicles } from '../../data/mockVehicles';
-import { Vehicle, VehicleType } from '../../types';
 
 
 

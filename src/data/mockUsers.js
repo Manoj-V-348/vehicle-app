@@ -1,4 +1,3 @@
-import { User, Booking } from '../types';
 
 export const mockUsers: User[] = [
   {

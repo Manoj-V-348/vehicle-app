@@ -16,7 +16,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
 import { mockBookings } from '../../data/mockUsers';
-import { Booking, BookingStatus } from '../../types';
 
 
 
@@ -163,7 +162,7 @@ const BookingDetailModal= ({
   );
 };
 
-const AdminBookingsScreen = ({ navigation }: any) => {
+const AdminBookingsScreen = ({ navigation }) => {
   const [bookings, setBookings] = useState(mockBookings);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedBooking, setSelectedBooking] = useState(null);

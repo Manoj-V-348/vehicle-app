@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Vehicle } from '../types';
 import { colors } from '../theme/colors';
 import { textPresets } from '../theme/typography';
 

@@ -56,7 +56,7 @@ const ActivityCard = ({ item }) => (
   </View>
 );
 
-const AdminDashboardScreen = ({ navigation }: any) => {
+const AdminDashboardScreen = ({ navigation }) => {
   const totalVehicles = mockVehicles.length;
   const availableVehicles = mockVehicles.filter((v) => v.available).length;
   const totalBookings = mockBookings.length;

@@ -15,12 +15,11 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
-import { VehicleType, VehicleCondition, FuelType, TransmissionType } from '../../types';
 import { mockVehicles } from '../../data/mockVehicles';
 
 
 
-const AdminEditVehicleScreen = ({ route, navigation }: any) => {
+const AdminEditVehicleScreen = ({ route, navigation }) => {
   const { vehicleId } = route.params;
   const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({

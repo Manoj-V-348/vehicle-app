@@ -18,7 +18,7 @@ import { mockVehicles } from '../../data/mockVehicles';
 
 const { width } = Dimensions.get('window');
 
-const HomeScreen = ({ navigation }: any) => {
+const HomeScreen = ({ navigation }) => {
   const featuredVehicles = mockVehicles.slice(0, 5);
   const popularTypes = [
     { type: 'Car', icon: 'car-sport', color: colors.primary },

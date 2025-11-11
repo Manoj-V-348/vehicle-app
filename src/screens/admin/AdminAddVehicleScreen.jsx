@@ -14,11 +14,10 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
-import { VehicleType, VehicleCondition, FuelType, TransmissionType } from '../../types';
 
 
 
-const AdminAddVehicleScreen = ({ navigation }: any) => {
+const AdminAddVehicleScreen = ({ navigation }) => {
   const [formData, setFormData] = useState({
     name: '',
     brand: '',

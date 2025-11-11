@@ -12,9 +12,8 @@ import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
 import VehicleCard from '../../components/VehicleCard';
 import { mockVehicles } from '../../data/mockVehicles';
-import { VehicleType } from '../../types';
 
-const BrowseScreen = ({ navigation }: any) => {
+const BrowseScreen = ({ navigation }) => {
   const [selectedType, setSelectedType] = useState('All');
 
   const types: (VehicleType | 'All')[] = ['All', 'Car', 'SUV', 'Bike', 'Truck', 'Van'];

@@ -17,9 +17,7 @@ import { textPresets } from '../../theme/typography';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../../navigation/AppNavigator';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'Payment'>;
 
-type PaymentMethod = 'card' | 'paypal' | 'apple' | 'google';
 
 const PaymentScreen= ({ route, navigation }) => {
   const { bookingId, amount, vehicleName } = route.params;

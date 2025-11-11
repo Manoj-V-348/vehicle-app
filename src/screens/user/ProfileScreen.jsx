@@ -18,7 +18,6 @@ import { getCurrentUser } from '../../data/mockUsers';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../../navigation/AppNavigator';
 
-type ProfileScreenNavigationProp = NativeStackNavigationProp;
 
 
 const ProfileScreen= ({ navigation }) => {

@@ -16,7 +16,6 @@ import { mockVehicles } from '../../data/mockVehicles';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../../navigation/AppNavigator';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'Rental'>;
 
 
 const RentalScreen= ({ route, navigation }) => {

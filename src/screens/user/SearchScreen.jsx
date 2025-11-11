@@ -15,11 +15,9 @@ import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
 import VehicleCard from '../../components/VehicleCard';
 import { mockVehicles } from '../../data/mockVehicles';
-import type { VehicleType, FuelType, TransmissionType } from '../../types';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../../navigation/AppNavigator';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'Search'>;
 
 const SearchScreen= ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');

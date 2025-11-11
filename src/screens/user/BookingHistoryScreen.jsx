@@ -13,7 +13,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
 import { mockBookings } from '../../data/mockUsers';
-import type { Booking, BookingStatus } from '../../types';
 
 const BookingHistoryScreen= () => {
   const [selectedTab, setSelectedTab] = useState('all');

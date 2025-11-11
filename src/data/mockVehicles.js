@@ -1,4 +1,3 @@
-import { Vehicle } from '../types';
 
 const carBrands = ['Tesla', 'BMW', 'Mercedes-Benz', 'Audi', 'Porsche', 'Toyota', 'Honda', 'Ford', 'Chevrolet', 'Lexus'];
 const bikeBrands = ['Harley-Davidson', 'Ducati', 'Yamaha', 'Kawasaki', 'Honda', 'Suzuki', 'Royal Enfield', 'BMW'];
