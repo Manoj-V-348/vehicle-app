@@ -24,10 +24,10 @@ type Props = NativeStackScreenProps<RootStackParamList, 'Search'>;
 const SearchScreen: React.FC = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showFilters, setShowFilters] = useState(false);
-  const [selectedTypes, setSelectedTypes] = useState<VehicleType[]>([]);
-  const [selectedFuels, setSelectedFuels] = useState<FuelType[]>([]);
-  const [selectedTransmissions, setSelectedTransmissions] = useState<TransmissionType[]>([]);
-  const [priceRange, setPriceRange] = useState<'all' | 'under50k' | '50k-100k' | 'over100k'>('all');
+  const [selectedTypes, setSelectedTypes] = useState([]);
+  const [selectedFuels, setSelectedFuels] = useState([]);
+  const [selectedTransmissions, setSelectedTransmissions] = useState([]);
+  const [priceRange, setPriceRange] = useState('all');
 
   const vehicleTypes: VehicleType[] = ['Car', 'SUV', 'Truck', 'Van', 'Bike', 'Motorcycle'];
   const fuelTypes: FuelType[] = ['Petrol', 'Diesel', 'Electric', 'Hybrid', 'CNG'];

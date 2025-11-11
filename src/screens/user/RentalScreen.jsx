@@ -28,11 +28,11 @@ const RentalScreen: React.FC = ({ route, navigation }) => {
   const { vehicleId } = route.params;
   const vehicle = mockVehicles.find((v) => v.id === vehicleId);
 
-  const [startDate, setStartDate] = useState<Date | null>(null);
-  const [endDate, setEndDate] = useState<Date | null>(null);
-  const [selectedDuration, setSelectedDuration] = useState<'daily' | 'weekly' | 'monthly'>('daily');
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
+  const [selectedDuration, setSelectedDuration] = useState('daily');
   const [includeInsurance, setIncludeInsurance] = useState(false);
-  const [selectedPickupTime, setSelectedPickupTime] = useState<string>('09:00');
+  const [selectedPickupTime, setSelectedPickupTime] = useState('09:00');
 
   if (!vehicle) {
     return (
@@ -101,7 +101,7 @@ const RentalScreen: React.FC = ({ route, navigation }) => {
   const renderDatePicker = (
     label: string,
     selectedDate: Date | null,
-    onSelect: (date: Date) => void
+    onSelect: (date)te) => void
   ) => (
     <View style={styles.pickerSection}>
       <Text style={styles.pickerLabel}>{label}</Text>

@@ -16,7 +16,7 @@ import { mockBookings } from '../../data/mockUsers';
 import type { Booking, BookingStatus } from '../../types';
 
 const BookingHistoryScreen: React.FC = () => {
-  const [selectedTab, setSelectedTab] = useState<'all' | 'upcoming' | 'completed' | 'cancelled'>('all');
+  const [selectedTab, setSelectedTab] = useState('all');
 
   const filterBookings = () => {
     const now = new Date();
@@ -38,7 +38,7 @@ const BookingHistoryScreen: React.FC = () => {
 
   const filteredBookings = filterBookings();
 
-  const getStatusColor = (status: BookingStatus) => {
+  const getStatusColor = (status)okingStatus) => {
     switch (status) {
       case 'Confirmed':
         return colors.success;
@@ -53,7 +53,7 @@ const BookingHistoryScreen: React.FC = () => {
     }
   };
 
-  const getStatusIcon = (status: BookingStatus) => {
+  const getStatusIcon = (status)okingStatus) => {
     switch (status) {
       case 'Confirmed':
         return 'checkmark-circle';

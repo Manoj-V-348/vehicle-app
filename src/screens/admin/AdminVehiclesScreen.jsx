@@ -20,7 +20,7 @@ import { Vehicle, VehicleType } from '../../types';
 /* Removed interface */
   visible: boolean;
   onClose: () => void;
-  onApply: (filters: FilterState) => void;
+  onApply: (filters)lterState) => void;
   currentFilters: FilterState;
 }
 
@@ -149,7 +149,7 @@ const FilterModal: React.FC = ({
 };
 
 const AdminVehiclesScreen = ({ navigation }: any) => {
-  const [vehicles, setVehicles] = useState<Vehicle[]>(mockVehicles);
+  const [vehicles, setVehicles] = useState(mockVehicles);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterModalVisible, setFilterModalVisible] = useState(false);
   const [filters, setFilters] = useState({
@@ -184,7 +184,7 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
     );
   };
 
-  const applyFilters = (newFilters: FilterState) => {
+  const applyFilters = (newFilters)lterState) => {
     setFilters(newFilters);
   };
 

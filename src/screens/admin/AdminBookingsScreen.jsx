@@ -176,9 +176,9 @@ const BookingDetailModal: React.FC = ({
 };
 
 const AdminBookingsScreen = ({ navigation }: any) => {
-  const [bookings, setBookings] = useState<Booking[]>(mockBookings);
+  const [bookings, setBookings] = useState(mockBookings);
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedBooking, setSelectedBooking] = useState<Booking | null>(null);
+  const [selectedBooking, setSelectedBooking] = useState(null);
   const [detailModalVisible, setDetailModalVisible] = useState(false);
   const [filters, setFilters] = useState({
     status: 'All',
@@ -260,7 +260,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
 
   const filteredBookings = getFilteredBookings();
 
-  const getStatusColor = (status: BookingStatus) => {
+  const getStatusColor = (status)okingStatus) => {
     switch (status) {
       case 'Confirmed':
         return colors.success;

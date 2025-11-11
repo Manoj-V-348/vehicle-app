@@ -15,7 +15,7 @@ import { mockVehicles } from '../../data/mockVehicles';
 import { VehicleType } from '../../types';
 
 const BrowseScreen = ({ navigation }: any) => {
-  const [selectedType, setSelectedType] = useState<VehicleType | 'All'>('All');
+  const [selectedType, setSelectedType] = useState('All');
 
   const types: (VehicleType | 'All')[] = ['All', 'Car', 'SUV', 'Bike', 'Truck', 'Van'];
 
