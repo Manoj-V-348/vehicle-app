@@ -114,7 +114,7 @@ const BookingHistoryScreen= () => {
     );
   };
 
-  const renderBookingCard = ({ item }: { item: Booking }) => {
+  const renderBookingCard = ({ item }) => {
     const statusColor = getStatusColor(item.status);
     const statusIcon = getStatusIcon(item.status);
     const typeIcon = getBookingTypeIcon(item.bookingType);

@@ -263,7 +263,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
     }
   };
 
-  const renderBookingCard = ({ item }: { item: Booking }) => (
+  const renderBookingCard = ({ item }) => (
     <TouchableOpacity
       style={styles.bookingCard}
       onPress={() => {
