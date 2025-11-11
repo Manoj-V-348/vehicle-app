@@ -114,7 +114,7 @@ const AdminDashboardScreen = ({ navigation }: any) => {
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
-          
+          <View>
             <Text style={styles.greeting}>Admin Dashboard</Text>
             <Text style={styles.headerTitle}>Overview & Analytics</Text>
           </View>
