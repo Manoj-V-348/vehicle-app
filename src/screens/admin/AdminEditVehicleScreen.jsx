@@ -190,11 +190,11 @@ const AdminEditVehicleScreen = ({ route, navigation }) => {
     </View>
   );
 
-  const renderSelector = <T extends string>(
+  const renderSelector = (
     label,
     field,
-    options: T[],
-    value: T | ''
+    options,
+    value
   ) => (
     <View style={styles.inputContainer}>
       <Text style={styles.label}>
