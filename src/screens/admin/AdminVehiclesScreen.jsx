@@ -81,7 +81,7 @@ const FilterModal= ({
                     styles.filterChip,
                     filters.availability === option && styles.filterChipActive,
                   ]}
-                  onPress={() => setFilters({ ...filters, availability)}
+                  onPress={() => setFilters({ ...filters, availability: option })}
                 >
                   <Text
                     style={[
@@ -106,7 +106,7 @@ const FilterModal= ({
                     styles.filterChip,
                     filters.sortBy === option.value && styles.filterChipActive,
                   ]}
-                  onPress={() => setFilters({ ...filters, sortBy)}
+                  onPress={() => setFilters({ ...filters, sortBy: option.value })}
                 >
                   <Text
                     style={[
@@ -355,7 +355,7 @@ const AdminVehiclesScreen = ({ navigation }) => {
           {filters.type !== 'All' && (
             <View style={styles.activeFilterChip}>
               <Text style={styles.activeFilterText}>{filters.type}</Text>
-              <TouchableOpacity onPress={() => setFilters({ ...filters, type)}>
+              <TouchableOpacity onPress={() => setFilters({ ...filters, type: 'All' })}>
                 <Ionicons name="close" size={16} color={colors.textSecondary} />
               </TouchableOpacity>
             </View>
@@ -364,7 +364,7 @@ const AdminVehiclesScreen = ({ navigation }) => {
             <View style={styles.activeFilterChip}>
               <Text style={styles.activeFilterText}>{filters.availability}</Text>
               <TouchableOpacity
-                onPress={() => setFilters({ ...filters, availability)}
+                onPress={() => setFilters({ ...filters, availability: 'All' })}
               >
                 <Ionicons name="close" size={16} color={colors.textSecondary} />
               </TouchableOpacity>
