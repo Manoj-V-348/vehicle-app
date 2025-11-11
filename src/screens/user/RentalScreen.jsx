@@ -96,7 +96,7 @@ const RentalScreen= ({ route, navigation }) => {
   const renderDatePicker = (
     label,
     selectedDate,
-    onSelect: (date)te) => void
+    onSelect
   ) => (
     <View style={styles.pickerSection}>
       <Text style={styles.pickerLabel}>{label}</Text>
