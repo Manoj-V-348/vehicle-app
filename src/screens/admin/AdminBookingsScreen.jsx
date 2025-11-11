@@ -412,7 +412,7 @@ const AdminBookingsScreen = ({ navigation }) => {
               styles.filterChip,
               filters.status === 'All' && styles.filterChipActive,
             ]}
-            onPress={() => setFilters({ ...filters, status)}
+            onPress={() => setFilters({ ...filters, status: 'All' })}
           >
             <Text
               style={[
