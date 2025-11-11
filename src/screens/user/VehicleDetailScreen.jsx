@@ -59,7 +59,7 @@ const VehicleDetailScreen= ({ route, navigation }) => {
     if (type === 'Rental') {
       navigation.navigate('Rental', { vehicleId: vehicle.id });
     } else {
-      navigation.navigate('Booking', { vehicleId: vehicle.id, bookingType);
+      navigation.navigate('Booking', { vehicleId: vehicle.id, bookingType: bookingType });
     }
   };
 
