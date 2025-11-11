@@ -18,7 +18,7 @@ import { textPresets } from '../../theme/typography';
 import { VehicleType, VehicleCondition, FuelType, TransmissionType } from '../../types';
 import { mockVehicles } from '../../data/mockVehicles';
 
-interface FormData {
+/* Removed interface */
   name: string;
   brand: string;
   model: string;
@@ -38,14 +38,14 @@ interface FormData {
   available: boolean;
 }
 
-interface FormErrors {
+/* Removed interface */
   [key: string]: string;
 }
 
 const AdminEditVehicleScreen = ({ route, navigation }: any) => {
   const { vehicleId } = route.params;
   const [loading, setLoading] = useState(true);
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState({
     name: '',
     brand: '',
     model: '',
@@ -65,7 +65,7 @@ const AdminEditVehicleScreen = ({ route, navigation }: any) => {
     available: true,
   });
 
-  const [errors, setErrors] = useState<FormErrors>({});
+  const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const vehicleTypes: VehicleType[] = ['Car', 'Bike', 'Truck', 'SUV', 'Van', 'Motorcycle'];

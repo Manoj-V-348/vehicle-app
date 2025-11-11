@@ -18,13 +18,13 @@ import { getCurrentUser } from '../../data/mockUsers';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../../navigation/AppNavigator';
 
-type ProfileScreenNavigationProp = NativeStackNavigationProp<RootStackParamList>;
+type ProfileScreenNavigationProp = NativeStackNavigationProp;
 
-interface Props {
+/* Removed interface */
   navigation: ProfileScreenNavigationProp;
 }
 
-const ProfileScreen: React.FC<Props> = ({ navigation }) => {
+const ProfileScreen: React.FC = ({ navigation }) => {
   const user = getCurrentUser();
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [darkModeEnabled, setDarkModeEnabled] = useState(false);

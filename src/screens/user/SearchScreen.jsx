@@ -21,7 +21,7 @@ import type { RootStackParamList } from '../../navigation/AppNavigator';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Search'>;
 
-const SearchScreen: React.FC<Props> = ({ navigation }) => {
+const SearchScreen: React.FC = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showFilters, setShowFilters] = useState(false);
   const [selectedTypes, setSelectedTypes] = useState<VehicleType[]>([]);

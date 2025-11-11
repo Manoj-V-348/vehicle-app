@@ -18,13 +18,13 @@ import { textPresets } from '../../theme/typography';
 import { mockBookings } from '../../data/mockUsers';
 import { Booking, BookingStatus } from '../../types';
 
-interface FilterState {
+/* Removed interface */
   status: BookingStatus | 'All';
   bookingType: 'All' | 'Purchase' | 'Rental' | 'Test Drive';
   sortBy: 'date' | 'amount' | 'status';
 }
 
-interface BookingDetailModalProps {
+/* Removed interface */
   visible: boolean;
   booking: Booking | null;
   onClose: () => void;
@@ -32,7 +32,7 @@ interface BookingDetailModalProps {
   onCancel: () => void;
 }
 
-const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
+const BookingDetailModal: React.FC = ({
   visible,
   booking,
   onClose,
@@ -180,7 +180,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedBooking, setSelectedBooking] = useState<Booking | null>(null);
   const [detailModalVisible, setDetailModalVisible] = useState(false);
-  const [filters, setFilters] = useState<FilterState>({
+  const [filters, setFilters] = useState({
     status: 'All',
     bookingType: 'All',
     sortBy: 'date',
@@ -322,7 +322,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
         </View>
 
         <View style={styles.bookingFooter}>
-          <View>
+          
             <Text style={styles.amountLabel}>Total Amount</Text>
             <Text style={styles.amountValue}>${item.totalAmount.toLocaleString()}</Text>
           </View>
@@ -364,7 +364,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
     <SafeAreaView style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <View>
+        
           <Text style={styles.headerTitle}>Manage Bookings</Text>
           <Text style={styles.headerSubtitle}>
             {filteredBookings.length} of {bookings.length} bookings

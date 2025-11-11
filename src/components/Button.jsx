@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { colors } from '../theme/colors';
 import { textPresets } from '../theme/typography';
 
-interface ButtonProps {
+/* Removed interface */
   title: string;
   onPress: () => void;
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
@@ -16,7 +16,7 @@ interface ButtonProps {
   textStyle?: TextStyle;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button: React.FC = ({
   title,
   onPress,
   variant = 'primary',

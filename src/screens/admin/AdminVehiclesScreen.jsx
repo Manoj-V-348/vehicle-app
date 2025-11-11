@@ -17,26 +17,26 @@ import { textPresets } from '../../theme/typography';
 import { mockVehicles } from '../../data/mockVehicles';
 import { Vehicle, VehicleType } from '../../types';
 
-interface FilterModalProps {
+/* Removed interface */
   visible: boolean;
   onClose: () => void;
   onApply: (filters: FilterState) => void;
   currentFilters: FilterState;
 }
 
-interface FilterState {
+/* Removed interface */
   type: VehicleType | 'All';
   availability: 'All' | 'Available' | 'Unavailable';
   sortBy: 'name' | 'price' | 'year' | 'rating';
 }
 
-const FilterModal: React.FC<FilterModalProps> = ({
+const FilterModal: React.FC = ({
   visible,
   onClose,
   onApply,
   currentFilters,
 }) => {
-  const [filters, setFilters] = useState<FilterState>(currentFilters);
+  const [filters, setFilters] = useState(currentFilters);
 
   const vehicleTypes: (VehicleType | 'All')[] = ['All', 'Car', 'SUV', 'Bike', 'Motorcycle', 'Truck', 'Van'];
   const availabilityOptions = ['All', 'Available', 'Unavailable'];
@@ -152,7 +152,7 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
   const [vehicles, setVehicles] = useState<Vehicle[]>(mockVehicles);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterModalVisible, setFilterModalVisible] = useState(false);
-  const [filters, setFilters] = useState<FilterState>({
+  const [filters, setFilters] = useState({
     type: 'All',
     availability: 'All',
     sortBy: 'name',
@@ -280,11 +280,11 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
         </View>
 
         <View style={styles.vehiclePricing}>
-          <View>
+          
             <Text style={styles.priceLabel}>Purchase</Text>
             <Text style={styles.priceValue}>${item.price.toLocaleString()}</Text>
           </View>
-          <View>
+          
             <Text style={styles.priceLabel}>Rental/Day</Text>
             <Text style={styles.priceValue}>${item.rentalPricePerDay}</Text>
           </View>
@@ -322,7 +322,7 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
     <SafeAreaView style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <View>
+        
           <Text style={styles.headerTitle}>Manage Vehicles</Text>
           <Text style={styles.headerSubtitle}>
             {filteredVehicles.length} of {vehicles.length} vehicles

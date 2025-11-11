@@ -32,7 +32,7 @@ const HomeScreen = ({ navigation }: any) => {
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
-          <View>
+          
             <Text style={styles.greeting}>Welcome back</Text>
             <Text style={styles.headerTitle}>Find Your Dream Vehicle</Text>
           </View>

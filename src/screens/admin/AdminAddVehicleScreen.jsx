@@ -16,7 +16,7 @@ import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
 import { VehicleType, VehicleCondition, FuelType, TransmissionType } from '../../types';
 
-interface FormData {
+/* Removed interface */
   name: string;
   brand: string;
   model: string;
@@ -35,12 +35,12 @@ interface FormData {
   location: string;
 }
 
-interface FormErrors {
+/* Removed interface */
   [key: string]: string;
 }
 
 const AdminAddVehicleScreen = ({ navigation }: any) => {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState({
     name: '',
     brand: '',
     model: '',
@@ -59,7 +59,7 @@ const AdminAddVehicleScreen = ({ navigation }: any) => {
     location: '',
   });
 
-  const [errors, setErrors] = useState<FormErrors>({});
+  const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const vehicleTypes: VehicleType[] = ['Car', 'Bike', 'Truck', 'SUV', 'Van', 'Motorcycle'];

@@ -26,30 +26,8 @@ import AdminBookingsScreen from '../screens/admin/AdminBookingsScreen';
 // Auth Screens
 import LoginScreen from '../screens/auth/LoginScreen';
 
-export type RootStackParamList = {
-  Login: undefined;
-  MainApp: undefined;
-  VehicleDetail: { vehicleId: string };
-  Search: undefined;
-  Booking: { vehicleId: string; bookingType: 'Purchase' | 'Rental' | 'Test Drive' };
-  Rental: { vehicleId: string };
-  Payment: { bookingId: string; amount: number; vehicleName: string };
-  BookingHistory: undefined;
-  AdminEditVehicle: { vehicleId: string };
-  AdminAddVehicle: undefined;
-};
-
-export type TabParamList = {
-  Home: undefined;
-  Browse: undefined;
-  Profile: undefined;
-  AdminDashboard: undefined;
-  AdminVehicles: undefined;
-  AdminBookings: undefined;
-};
-
-const Stack = createNativeStackNavigator<RootStackParamList>();
-const Tab = createBottomTabNavigator<TabParamList>();
+const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const UserTabs = () => {
   return (
@@ -162,7 +140,7 @@ const AppNavigator = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   return (
-    <NavigationContainer>
+    
       <Stack.Navigator
         screenOptions={{
           headerShown: false,

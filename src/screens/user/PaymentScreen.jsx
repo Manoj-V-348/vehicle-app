@@ -21,10 +21,10 @@ type Props = NativeStackScreenProps<RootStackParamList, 'Payment'>;
 
 type PaymentMethod = 'card' | 'paypal' | 'apple' | 'google';
 
-const PaymentScreen: React.FC<Props> = ({ route, navigation }) => {
+const PaymentScreen: React.FC = ({ route, navigation }) => {
   const { bookingId, amount, vehicleName } = route.params;
 
-  const [selectedMethod, setSelectedMethod] = useState<PaymentMethod>('card');
+  const [selectedMethod, setSelectedMethod] = useState('card');
   const [cardNumber, setCardNumber] = useState('');
   const [cardName, setCardName] = useState('');
   const [expiryDate, setExpiryDate] = useState('');

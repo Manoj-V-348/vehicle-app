@@ -9,12 +9,12 @@ import { textPresets } from '../theme/typography';
 const { width } = Dimensions.get('window');
 const CARD_WIDTH = width - 32;
 
-interface VehicleCardProps {
+/* Removed interface */
   vehicle: Vehicle;
   onPress: () => void;
 }
 
-const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onPress }) => {
+const VehicleCard: React.FC = ({ vehicle, onPress }) => {
   return (
     <TouchableOpacity
       style={styles.container}
@@ -73,7 +73,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onPress }) => {
         </View>
 
         <View style={styles.footer}>
-          <View>
+          
             <Text style={styles.priceLabel}>Purchase</Text>
             <Text style={styles.price}>${vehicle.price.toLocaleString()}</Text>
           </View>

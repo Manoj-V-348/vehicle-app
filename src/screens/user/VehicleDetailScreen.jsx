@@ -23,7 +23,7 @@ const IMAGE_HEIGHT = height * 0.45;
 
 type Props = NativeStackScreenProps<RootStackParamList, 'VehicleDetail'>;
 
-const VehicleDetailScreen: React.FC<Props> = ({ route, navigation }) => {
+const VehicleDetailScreen: React.FC = ({ route, navigation }) => {
   const { vehicleId } = route.params;
   const vehicle = mockVehicles.find((v) => v.id === vehicleId);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

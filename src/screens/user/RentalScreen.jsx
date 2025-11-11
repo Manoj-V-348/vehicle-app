@@ -18,13 +18,13 @@ import type { RootStackParamList } from '../../navigation/AppNavigator';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Rental'>;
 
-interface DateOption {
+/* Removed interface */
   date: Date;
   label: string;
   shortLabel: string;
 }
 
-const RentalScreen: React.FC<Props> = ({ route, navigation }) => {
+const RentalScreen: React.FC = ({ route, navigation }) => {
   const { vehicleId } = route.params;
   const vehicle = mockVehicles.find((v) => v.id === vehicleId);
 

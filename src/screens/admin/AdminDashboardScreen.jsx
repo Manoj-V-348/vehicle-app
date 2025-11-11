@@ -17,7 +17,7 @@ import { mockBookings } from '../../data/mockUsers';
 
 const { width } = Dimensions.get('window');
 
-interface StatCardProps {
+/* Removed interface */
   title: string;
   value: string | number;
   icon: keyof typeof Ionicons.glyphMap;
@@ -26,7 +26,7 @@ interface StatCardProps {
   trendUp?: boolean;
 }
 
-interface ActivityItem {
+/* Removed interface */
   id: string;
   type: 'booking' | 'vehicle' | 'user';
   title: string;
@@ -35,7 +35,7 @@ interface ActivityItem {
   icon: keyof typeof Ionicons.glyphMap;
 }
 
-const StatCard: React.FC<StatCardProps> = ({ title, value, icon, color, trend, trendUp }) => (
+const StatCard: React.FC = ({ title, value, icon, color, trend, trendUp }) => (
   <View style={styles.statCard}>
     <View style={[styles.statIconContainer, { backgroundColor: color + '15' }]}>
       <Ionicons name={icon} size={28} color={color} />
@@ -59,7 +59,7 @@ const StatCard: React.FC<StatCardProps> = ({ title, value, icon, color, trend, t
   </View>
 );
 
-const ActivityCard: React.FC<{ item: ActivityItem }> = ({ item }) => (
+const ActivityCard = ({ item }) => (
   <View style={styles.activityCard}>
     <View style={styles.activityIcon}>
       <Ionicons name={item.icon} size={20} color={colors.primary} />
@@ -130,7 +130,7 @@ const AdminDashboardScreen = ({ navigation }: any) => {
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
-          <View>
+          
             <Text style={styles.greeting}>Admin Dashboard</Text>
             <Text style={styles.headerTitle}>Overview & Analytics</Text>
           </View>
@@ -227,7 +227,7 @@ const AdminDashboardScreen = ({ navigation }: any) => {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Booking Overview</Text>
-            <TouchableOpacity>
+            
               <Text style={styles.seeAllText}>This Month</Text>
             </TouchableOpacity>
           </View>
@@ -349,7 +349,7 @@ const AdminDashboardScreen = ({ navigation }: any) => {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Recent Activity</Text>
-            <TouchableOpacity>
+            
               <Text style={styles.seeAllText}>View All</Text>
             </TouchableOpacity>
           </View>
