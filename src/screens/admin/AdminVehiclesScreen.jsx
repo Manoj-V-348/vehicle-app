@@ -172,7 +172,7 @@ const AdminVehiclesScreen = ({ navigation }) => {
     );
   };
 
-  const applyFilters = (newFilters)lterState) => {
+  const applyFilters = (newFilters) => {
     setFilters(newFilters);
   };
 

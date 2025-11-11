@@ -247,7 +247,7 @@ const AdminBookingsScreen = ({ navigation }) => {
 
   const filteredBookings = getFilteredBookings();
 
-  const getStatusColor = (status)okingStatus) => {
+  const getStatusColor = (status) => {
     switch (status) {
       case 'Confirmed':
         return colors.success;
