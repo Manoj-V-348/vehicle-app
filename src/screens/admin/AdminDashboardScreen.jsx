@@ -333,7 +333,7 @@ const AdminDashboardScreen = ({ navigation }: any) => {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Recent Activity</Text>
-            
+            <TouchableOpacity>
               <Text style={styles.seeAllText}>View All</Text>
             </TouchableOpacity>
           </View>
