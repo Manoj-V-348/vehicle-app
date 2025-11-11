@@ -16,12 +16,8 @@ import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
 import Button from '../../components/Button';
 
-/* Removed interface */
-  navigation: any;
-  setIsAdmin: (isAdmin: boolean) => void;
-}
 
-const LoginScreen: React.FC = ({ navigation, setIsAdmin }) => {
+const LoginScreen= ({ navigation, setIsAdmin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);

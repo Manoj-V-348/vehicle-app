@@ -9,12 +9,8 @@ import { textPresets } from '../theme/typography';
 const { width } = Dimensions.get('window');
 const CARD_WIDTH = width - 32;
 
-/* Removed interface */
-  vehicle: Vehicle;
-  onPress: () => void;
-}
 
-const VehicleCard: React.FC = ({ vehicle, onPress }) => {
+const VehicleCard= ({ vehicle, onPress }) => {
   return (
     <TouchableOpacity
       style={styles.container}

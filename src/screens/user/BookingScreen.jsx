@@ -21,7 +21,7 @@ import type { RootStackParamList } from '../../navigation/AppNavigator';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Booking'>;
 
-const BookingScreen: React.FC = ({ route, navigation }) => {
+const BookingScreen= ({ route, navigation }) => {
   const { vehicleId, bookingType } = route.params;
   const vehicle = mockVehicles.find((v) => v.id === vehicleId);
 

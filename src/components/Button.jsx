@@ -4,19 +4,8 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { colors } from '../theme/colors';
 import { textPresets } from '../theme/typography';
 
-/* Removed interface */
-  title: string;
-  onPress: () => void;
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
-  size?: 'small' | 'medium' | 'large';
-  disabled?: boolean;
-  loading?: boolean;
-  icon?: React.ReactNode;
-  style?: ViewStyle;
-  textStyle?: TextStyle;
-}
 
-const Button: React.FC = ({
+const Button= ({
   title,
   onPress,
   variant = 'primary',

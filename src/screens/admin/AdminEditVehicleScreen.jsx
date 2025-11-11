@@ -18,29 +18,7 @@ import { textPresets } from '../../theme/typography';
 import { VehicleType, VehicleCondition, FuelType, TransmissionType } from '../../types';
 import { mockVehicles } from '../../data/mockVehicles';
 
-/* Removed interface */
-  name: string;
-  brand: string;
-  model: string;
-  year: string;
-  type: VehicleType | '';
-  condition: VehicleCondition | '';
-  price: string;
-  rentalPricePerDay: string;
-  fuelType: FuelType | '';
-  transmission: TransmissionType | '';
-  mileage: string;
-  seatingCapacity: string;
-  color: string;
-  description: string;
-  features: string;
-  location: string;
-  available: boolean;
-}
 
-/* Removed interface */
-  [key: string]: string;
-}
 
 const AdminEditVehicleScreen = ({ route, navigation }: any) => {
   const { vehicleId } = route.params;

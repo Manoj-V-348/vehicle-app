@@ -18,21 +18,9 @@ import { textPresets } from '../../theme/typography';
 import { mockBookings } from '../../data/mockUsers';
 import { Booking, BookingStatus } from '../../types';
 
-/* Removed interface */
-  status: BookingStatus | 'All';
-  bookingType: 'All' | 'Purchase' | 'Rental' | 'Test Drive';
-  sortBy: 'date' | 'amount' | 'status';
-}
 
-/* Removed interface */
-  visible: boolean;
-  booking: Booking | null;
-  onClose: () => void;
-  onConfirm: () => void;
-  onCancel: () => void;
-}
 
-const BookingDetailModal: React.FC = ({
+const BookingDetailModal= ({
   visible,
   booking,
   onClose,

@@ -16,28 +16,7 @@ import { colors } from '../../theme/colors';
 import { textPresets } from '../../theme/typography';
 import { VehicleType, VehicleCondition, FuelType, TransmissionType } from '../../types';
 
-/* Removed interface */
-  name: string;
-  brand: string;
-  model: string;
-  year: string;
-  type: VehicleType | '';
-  condition: VehicleCondition | '';
-  price: string;
-  rentalPricePerDay: string;
-  fuelType: FuelType | '';
-  transmission: TransmissionType | '';
-  mileage: string;
-  seatingCapacity: string;
-  color: string;
-  description: string;
-  features: string;
-  location: string;
-}
 
-/* Removed interface */
-  [key: string]: string;
-}
 
 const AdminAddVehicleScreen = ({ navigation }: any) => {
   const [formData, setFormData] = useState({

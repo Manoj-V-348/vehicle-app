@@ -17,20 +17,9 @@ import { textPresets } from '../../theme/typography';
 import { mockVehicles } from '../../data/mockVehicles';
 import { Vehicle, VehicleType } from '../../types';
 
-/* Removed interface */
-  visible: boolean;
-  onClose: () => void;
-  onApply: (filters)lterState) => void;
-  currentFilters: FilterState;
-}
 
-/* Removed interface */
-  type: VehicleType | 'All';
-  availability: 'All' | 'Available' | 'Unavailable';
-  sortBy: 'name' | 'price' | 'year' | 'rating';
-}
 
-const FilterModal: React.FC = ({
+const FilterModal= ({
   visible,
   onClose,
   onApply,

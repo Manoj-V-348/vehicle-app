@@ -17,25 +17,9 @@ import { mockBookings } from '../../data/mockUsers';
 
 const { width } = Dimensions.get('window');
 
-/* Removed interface */
-  title: string;
-  value: string | number;
-  icon: keyof typeof Ionicons.glyphMap;
-  color: string;
-  trend?: string;
-  trendUp?: boolean;
-}
 
-/* Removed interface */
-  id: string;
-  type: 'booking' | 'vehicle' | 'user';
-  title: string;
-  description: string;
-  time: string;
-  icon: keyof typeof Ionicons.glyphMap;
-}
 
-const StatCard: React.FC = ({ title, value, icon, color, trend, trendUp }) => (
+const StatCard= ({ title, value, icon, color, trend, trendUp }) => (
   <View style={styles.statCard}>
     <View style={[styles.statIconContainer, { backgroundColor: color + '15' }]}>
       <Ionicons name={icon} size={28} color={color} />

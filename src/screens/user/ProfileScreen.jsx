@@ -20,11 +20,8 @@ import type { RootStackParamList } from '../../navigation/AppNavigator';
 
 type ProfileScreenNavigationProp = NativeStackNavigationProp;
 
-/* Removed interface */
-  navigation: ProfileScreenNavigationProp;
-}
 
-const ProfileScreen: React.FC = ({ navigation }) => {
+const ProfileScreen= ({ navigation }) => {
   const user = getCurrentUser();
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [darkModeEnabled, setDarkModeEnabled] = useState(false);
