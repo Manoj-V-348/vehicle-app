@@ -69,7 +69,7 @@ const VehicleCard= ({ vehicle, onPress }) => {
         </View>
 
         <View style={styles.footer}>
-          
+          <View>
             <Text style={styles.priceLabel}>Purchase</Text>
             <Text style={styles.price}>${vehicle.price.toLocaleString()}</Text>
           </View>
