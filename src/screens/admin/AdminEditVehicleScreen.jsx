@@ -203,7 +203,7 @@ const AdminEditVehicleScreen = ({ route, navigation }: any) => {
         ]}
         placeholder={placeholder}
         placeholderTextColor={colors.textSecondary}
-        value={formData[field] as string}
+        value={formData[field]}
         onChangeText={(value) => updateField(field, value)}
         keyboardType={keyboardType}
         multiline={multiline}

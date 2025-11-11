@@ -66,7 +66,7 @@ const ProfileScreen: React.FC = ({ navigation }) => {
       disabled={!onPress}
     >
       <View style={styles.menuIcon}>
-        <Ionicons name={icon as any} size={22} color={colors.primary} />
+        <Ionicons name={icon} size={22} color={colors.primary} />
       </View>
       <View style={styles.menuContent}>
         <Text style={styles.menuTitle}>{title}</Text>

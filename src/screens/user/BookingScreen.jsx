@@ -104,7 +104,7 @@ const BookingScreen: React.FC = ({ route, navigation }) => {
     <View style={styles.inputGroup}>
       <Text style={styles.inputLabel}>{label}</Text>
       <View style={[styles.inputWrapper, multiline && styles.inputWrapperMultiline]}>
-        <Ionicons name={icon as any} size={20} color={colors.systemGray} />
+        <Ionicons name={icon} size={20} color={colors.systemGray} />
         <TextInput
           style={[styles.input, multiline && styles.inputMultiline]}
           placeholder={placeholder}
@@ -166,7 +166,7 @@ const BookingScreen: React.FC = ({ route, navigation }) => {
               colors={[bookingInfo.color, bookingInfo.color + 'CC']}
               style={styles.headerIconGradient}
             >
-              <Ionicons name={bookingInfo.icon as any} size={32} color={colors.white} />
+              <Ionicons name={bookingInfo.icon} size={32} color={colors.white} />
             </LinearGradient>
           </View>
           <Text style={styles.headerTitle}>{bookingInfo.title}</Text>

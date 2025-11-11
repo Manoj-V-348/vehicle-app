@@ -73,7 +73,7 @@ const VehicleDetailScreen: React.FC = ({ route, navigation }) => {
   const renderSpecItem = (icon: string, label: string, value: string) => (
     <View style={styles.specCard}>
       <View style={styles.specIcon}>
-        <Ionicons name={icon as any} size={24} color={colors.primary} />
+        <Ionicons name={icon} size={24} color={colors.primary} />
       </View>
       <Text style={styles.specLabel}>{label}</Text>
       <Text style={styles.specValue}>{value}</Text>

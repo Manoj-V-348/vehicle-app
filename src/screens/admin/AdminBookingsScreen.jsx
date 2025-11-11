@@ -193,7 +193,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
         text: 'Confirm',
         onPress: () => {
           setBookings(
-            bookings.map((b) => (b.id === bookingId ? { ...b, status: 'Confirmed' as BookingStatus } : b))
+            bookings.map((b) => (b.id === bookingId ? { ...b, status: 'Confirmed' } : b))
           );
           setDetailModalVisible(false);
           Alert.alert('Success', 'Booking confirmed successfully');
@@ -210,7 +210,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
         style: 'destructive',
         onPress: () => {
           setBookings(
-            bookings.map((b) => (b.id === bookingId ? { ...b, status: 'Cancelled' as BookingStatus } : b))
+            bookings.map((b) => (b.id === bookingId ? { ...b, status: 'Cancelled' } : b))
           );
           setDetailModalVisible(false);
           Alert.alert('Success', 'Booking cancelled');
@@ -436,7 +436,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
               All Status
             </Text>
           </TouchableOpacity>
-          {(['Pending', 'Confirmed', 'Completed', 'Cancelled'] as BookingStatus[]).map((status) => (
+          {(['Pending', 'Confirmed', 'Completed', 'Cancelled'][]).map((status) => (
             <TouchableOpacity
               key={status}
               style={[

@@ -86,7 +86,7 @@ const HomeScreen = ({ navigation }: any) => {
                 onPress={() => navigation.navigate('Browse', { filter: item.type })}
               >
                 <View style={[styles.categoryIcon, { backgroundColor: item.color }]}>
-                  <Ionicons name={item.icon as any} size={28} color={colors.white} />
+                  <Ionicons name={item.icon} size={28} color={colors.white} />
                 </View>
                 <Text style={styles.categoryText}>{item.type}</Text>
               </TouchableOpacity>

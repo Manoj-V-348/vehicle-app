@@ -160,7 +160,7 @@ const PaymentScreen: React.FC = ({ route, navigation }) => {
       >
         <View style={[styles.methodIcon, isSelected && styles.methodIconActive]}>
           <Ionicons
-            name={icon as any}
+            name={icon}
             size={24}
             color={isSelected ? colors.white : colors.primary}
           />

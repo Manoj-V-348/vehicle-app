@@ -163,7 +163,7 @@ const RentalScreen: React.FC = ({ route, navigation }) => {
         onPress={() => setSelectedDuration(duration)}
       >
         <View style={[styles.durationIcon, isSelected && styles.durationIconSelected]}>
-          <Ionicons name={icon as any} size={24} color={isSelected ? colors.white : colors.primary} />
+          <Ionicons name={icon} size={24} color={isSelected ? colors.white : colors.primary} />
         </View>
         <View style={styles.durationContent}>
           <Text style={[styles.durationTitle, isSelected && styles.durationTitleSelected]}>

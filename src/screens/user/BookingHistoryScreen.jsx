@@ -125,7 +125,7 @@ const BookingHistoryScreen: React.FC = () => {
           <View style={styles.bookingImageContainer}>
             <Image source={{ uri: item.vehicleImage }} style={styles.bookingImage} />
             <View style={[styles.typeIconBadge, { backgroundColor: statusColor + '20' }]}>
-              <Ionicons name={typeIcon as any} size={16} color={statusColor} />
+              <Ionicons name={typeIcon} size={16} color={statusColor} />
             </View>
           </View>
 
@@ -138,7 +138,7 @@ const BookingHistoryScreen: React.FC = () => {
               <Text style={styles.bookingDate}>{formatDate(item.startDate)}</Text>
             </View>
             <View style={[styles.statusBadge, { backgroundColor: statusColor + '15' }]}>
-              <Ionicons name={statusIcon as any} size={14} color={statusColor} />
+              <Ionicons name={statusIcon} size={14} color={statusColor} />
               <Text style={[styles.statusText, { color: statusColor }]}>{item.status}</Text>
             </View>
           </View>
@@ -149,7 +149,7 @@ const BookingHistoryScreen: React.FC = () => {
             <View style={styles.detailItem}>
               <Text style={styles.detailLabel}>Booking Type</Text>
               <View style={styles.detailValueRow}>
-                <Ionicons name={typeIcon as any} size={16} color={colors.primary} />
+                <Ionicons name={typeIcon} size={16} color={colors.primary} />
                 <Text style={styles.detailValue}>{item.bookingType}</Text>
               </View>
             </View>

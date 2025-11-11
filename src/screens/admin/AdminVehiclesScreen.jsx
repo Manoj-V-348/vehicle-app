@@ -93,7 +93,7 @@ const FilterModal: React.FC = ({
                     styles.filterChip,
                     filters.availability === option && styles.filterChipActive,
                   ]}
-                  onPress={() => setFilters({ ...filters, availability: option as any })}
+                  onPress={() => setFilters({ ...filters, availability: option })}
                 >
                   <Text
                     style={[
