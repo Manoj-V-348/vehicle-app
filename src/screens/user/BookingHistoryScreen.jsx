@@ -38,7 +38,7 @@ const BookingHistoryScreen= () => {
 
   const filteredBookings = filterBookings();
 
-  const getStatusColor = (status)okingStatus) => {
+  const getStatusColor = (status) => {
     switch (status) {
       case 'Confirmed':
         return colors.success;
@@ -53,7 +53,7 @@ const BookingHistoryScreen= () => {
     }
   };
 
-  const getStatusIcon = (status)okingStatus) => {
+  const getStatusIcon = (status) => {
     switch (status) {
       case 'Confirmed':
         return 'checkmark-circle';
