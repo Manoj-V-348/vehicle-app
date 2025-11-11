@@ -46,7 +46,7 @@ const AdminAddVehicleScreen = ({ navigation }: any) => {
   const fuelTypes: FuelType[] = ['Petrol', 'Diesel', 'Electric', 'Hybrid', 'CNG'];
   const transmissionTypes: TransmissionType[] = ['Automatic', 'Manual', 'CVT', 'Semi-Automatic'];
 
-  const updateField = (field: keyof FormData, value: string) => {
+  const updateField = (field, value) => {
     setFormData({ ...formData, [field]: value });
     // Clear error when user starts typing
     if (errors[field]) {
@@ -127,11 +127,11 @@ const AdminAddVehicleScreen = ({ navigation }: any) => {
   };
 
   const renderInput = (
-    label: string,
-    field: keyof FormData,
-    placeholder: string,
+    label,
+    field,
+    placeholder,
     keyboardType: 'default' | 'numeric' | 'number-pad' = 'default',
-    multiline: boolean = false
+    multiline = false
   ) => (
     <View style={styles.inputContainer}>
       <Text style={styles.label}>
@@ -156,8 +156,8 @@ const AdminAddVehicleScreen = ({ navigation }: any) => {
   );
 
   const renderSelector = <T extends string>(
-    label: string,
-    field: keyof FormData,
+    label,
+    field,
     options: T[],
     value: T | ''
   ) => (

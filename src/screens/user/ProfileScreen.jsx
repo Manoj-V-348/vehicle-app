@@ -49,11 +49,11 @@ const ProfileScreen= ({ navigation }) => {
   };
 
   const renderMenuItem = (
-    icon: string,
-    title: string,
+    icon,
+    title,
     subtitle?: string,
     onPress?: () => void,
-    showArrow: boolean = true,
+    showArrow = true,
     rightComponent?: React.ReactNode
   ) => (
     <TouchableOpacity
@@ -76,11 +76,11 @@ const ProfileScreen= ({ navigation }) => {
   );
 
   const renderSwitchItem = (
-    icon: string,
-    title: string,
-    subtitle: string,
-    value: boolean,
-    onValueChange: (value: boolean) => void
+    icon,
+    title,
+    subtitle,
+    value,
+    onValueChange: (value) => void
   ) => (
     renderMenuItem(
       icon,

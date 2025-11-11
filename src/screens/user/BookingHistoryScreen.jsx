@@ -68,7 +68,7 @@ const BookingHistoryScreen= () => {
     }
   };
 
-  const getBookingTypeIcon = (type: string) => {
+  const getBookingTypeIcon = (type) => {
     switch (type) {
       case 'Purchase':
         return 'cart';
@@ -81,7 +81,7 @@ const BookingHistoryScreen= () => {
     }
   };
 
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString) => {
     const date = new Date(dateString);
     const options: Intl.DateTimeFormatOptions = {
       month: 'short',
@@ -93,8 +93,8 @@ const BookingHistoryScreen= () => {
 
   const renderTabButton = (
     tab: 'all' | 'upcoming' | 'completed' | 'cancelled',
-    label: string,
-    count: number
+    label,
+    count
   ) => {
     const isActive = selectedTab === tab;
     return (

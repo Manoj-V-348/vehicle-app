@@ -77,12 +77,12 @@ const AdminEditVehicleScreen = ({ route, navigation }: any) => {
       setLoading(false);
     } else {
       Alert.alert('Error', 'Vehicle not found', [
-        { text: 'OK', onPress: () => navigation.goBack() },
+        { text: 'OK', onPress) => navigation.goBack() },
       ]);
     }
   }, [vehicleId]);
 
-  const updateField = (field: keyof FormData, value: string | boolean) => {
+  const updateField = (field, value | boolean) => {
     setFormData({ ...formData, [field]: value });
     // Clear error when user starts typing
     if (errors[field]) {
@@ -163,11 +163,11 @@ const AdminEditVehicleScreen = ({ route, navigation }: any) => {
   };
 
   const renderInput = (
-    label: string,
-    field: keyof FormData,
-    placeholder: string,
+    label,
+    field,
+    placeholder,
     keyboardType: 'default' | 'numeric' | 'number-pad' = 'default',
-    multiline: boolean = false
+    multiline = false
   ) => (
     <View style={styles.inputContainer}>
       <Text style={styles.label}>
@@ -192,8 +192,8 @@ const AdminEditVehicleScreen = ({ route, navigation }: any) => {
   );
 
   const renderSelector = <T extends string>(
-    label: string,
-    field: keyof FormData,
+    label,
+    field,
     options: T[],
     value: T | ''
   ) => (

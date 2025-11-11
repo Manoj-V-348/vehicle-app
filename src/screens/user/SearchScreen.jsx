@@ -33,7 +33,7 @@ const SearchScreen= ({ navigation }) => {
   const fuelTypes: FuelType[] = ['Petrol', 'Diesel', 'Electric', 'Hybrid', 'CNG'];
   const transmissionTypes: TransmissionType[] = ['Automatic', 'Manual', 'CVT', 'Semi-Automatic'];
 
-  const toggleFilter = <T,>(value: T, selected: T[], setter: React.Dispatch<React.SetStateAction<T[]>>) => {
+  const toggleFilter = <T,>(value, selected: T[], setter) => {
     if (selected.includes(value)) {
       setter(selected.filter((item) => item !== value));
     } else {
@@ -86,7 +86,7 @@ const SearchScreen= ({ navigation }) => {
     selectedTypes.length + selectedFuels.length + selectedTransmissions.length + (priceRange !== 'all' ? 1 : 0);
 
   const renderFilterChip = <T,>(
-    label: string,
+    label,
     value: T,
     selected: T[],
     onToggle: () => void
@@ -106,7 +106,7 @@ const SearchScreen= ({ navigation }) => {
   };
 
   const renderPriceRangeOption = (
-    label: string,
+    label,
     value: 'all' | 'under50k' | '50k-100k' | 'over100k'
   ) => {
     const isSelected = priceRange === value;

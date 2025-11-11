@@ -174,14 +174,14 @@ const AdminBookingsScreen = ({ navigation }: any) => {
     sortBy: 'date',
   });
 
-  const handleConfirmBooking = (bookingId: string) => {
+  const handleConfirmBooking = (bookingId) => {
     Alert.alert('Confirm Booking', 'Are you sure you want to confirm this booking?', [
       { text: 'Cancel', style: 'cancel' },
       {
         text: 'Confirm',
         onPress: () => {
           setBookings(
-            bookings.map((b) => (b.id === bookingId ? { ...b, status: 'Confirmed' } : b))
+            bookings.map((b) => (b.id === bookingId ? { ...b, status))
           );
           setDetailModalVisible(false);
           Alert.alert('Success', 'Booking confirmed successfully');
@@ -190,7 +190,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
     ]);
   };
 
-  const handleCancelBooking = (bookingId: string) => {
+  const handleCancelBooking = (bookingId) => {
     Alert.alert('Cancel Booking', 'Are you sure you want to cancel this booking?', [
       { text: 'No', style: 'cancel' },
       {
@@ -198,7 +198,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
         style: 'destructive',
         onPress: () => {
           setBookings(
-            bookings.map((b) => (b.id === bookingId ? { ...b, status: 'Cancelled' } : b))
+            bookings.map((b) => (b.id === bookingId ? { ...b, status))
           );
           setDetailModalVisible(false);
           Alert.alert('Success', 'Booking cancelled');
@@ -413,7 +413,7 @@ const AdminBookingsScreen = ({ navigation }: any) => {
               styles.filterChip,
               filters.status === 'All' && styles.filterChipActive,
             ]}
-            onPress={() => setFilters({ ...filters, status: 'All' })}
+            onPress={() => setFilters({ ...filters, status)}
           >
             <Text
               style={[

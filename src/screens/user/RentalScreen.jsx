@@ -94,8 +94,8 @@ const RentalScreen= ({ route, navigation }) => {
   };
 
   const renderDatePicker = (
-    label: string,
-    selectedDate: Date | null,
+    label,
+    selectedDate,
     onSelect: (date)te) => void
   ) => (
     <View style={styles.pickerSection}>
@@ -147,9 +147,9 @@ const RentalScreen= ({ route, navigation }) => {
 
   const renderDurationOption = (
     duration: 'daily' | 'weekly' | 'monthly',
-    title: string,
-    description: string,
-    icon: string
+    title,
+    description,
+    icon
   ) => {
     const isSelected = selectedDuration === duration;
     return (

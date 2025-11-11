@@ -47,7 +47,7 @@ const BookingScreen= ({ route, navigation }) => {
     );
   }
 
-  const updateField = (field: keyof typeof formData, value: string) => {
+  const updateField = (field, value) => {
     setFormData({ ...formData, [field]: value });
   };
 
@@ -94,12 +94,12 @@ const BookingScreen= ({ route, navigation }) => {
   };
 
   const renderInput = (
-    label: string,
-    field: keyof typeof formData,
-    placeholder: string,
-    icon: string,
+    label,
+    field,
+    placeholder,
+    icon,
     keyboardType: any = 'default',
-    multiline: boolean = false
+    multiline = false
   ) => (
     <View style={styles.inputGroup}>
       <Text style={styles.inputLabel}>{label}</Text>

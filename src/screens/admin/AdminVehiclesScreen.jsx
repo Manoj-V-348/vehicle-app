@@ -29,7 +29,7 @@ const FilterModal= ({
 
   const vehicleTypes: (VehicleType | 'All')[] = ['All', 'Car', 'SUV', 'Bike', 'Motorcycle', 'Truck', 'Van'];
   const availabilityOptions = ['All', 'Available', 'Unavailable'];
-  const sortOptions: { label: string; value: FilterState['sortBy'] }[] = [
+  const sortOptions: { label; value: FilterState['sortBy'] }[] = [
     { label: 'Name', value: 'name' },
     { label: 'Price', value: 'price' },
     { label: 'Year', value: 'year' },
@@ -82,7 +82,7 @@ const FilterModal= ({
                     styles.filterChip,
                     filters.availability === option && styles.filterChipActive,
                   ]}
-                  onPress={() => setFilters({ ...filters, availability: option })}
+                  onPress={() => setFilters({ ...filters, availability)}
                 >
                   <Text
                     style={[
@@ -107,7 +107,7 @@ const FilterModal= ({
                     styles.filterChip,
                     filters.sortBy === option.value && styles.filterChipActive,
                   ]}
-                  onPress={() => setFilters({ ...filters, sortBy: option.value })}
+                  onPress={() => setFilters({ ...filters, sortBy)}
                 >
                   <Text
                     style={[
@@ -147,7 +147,7 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
     sortBy: 'name',
   });
 
-  const handleDelete = (vehicleId: string, vehicleName: string) => {
+  const handleDelete = (vehicleId, vehicleName) => {
     Alert.alert(
       'Delete Vehicle',
       `Are you sure you want to delete ${vehicleName}?`,
@@ -165,7 +165,7 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
     );
   };
 
-  const handleToggleAvailability = (vehicleId: string) => {
+  const handleToggleAvailability = (vehicleId) => {
     setVehicles(
       vehicles.map((v) =>
         v.id === vehicleId ? { ...v, available: !v.available } : v
@@ -356,7 +356,7 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
           {filters.type !== 'All' && (
             <View style={styles.activeFilterChip}>
               <Text style={styles.activeFilterText}>{filters.type}</Text>
-              <TouchableOpacity onPress={() => setFilters({ ...filters, type: 'All' })}>
+              <TouchableOpacity onPress={() => setFilters({ ...filters, type)}>
                 <Ionicons name="close" size={16} color={colors.textSecondary} />
               </TouchableOpacity>
             </View>
@@ -365,7 +365,7 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
             <View style={styles.activeFilterChip}>
               <Text style={styles.activeFilterText}>{filters.availability}</Text>
               <TouchableOpacity
-                onPress={() => setFilters({ ...filters, availability: 'All' })}
+                onPress={() => setFilters({ ...filters, availability)}
               >
                 <Ionicons name="close" size={16} color={colors.textSecondary} />
               </TouchableOpacity>

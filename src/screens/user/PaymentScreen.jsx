@@ -51,13 +51,13 @@ const PaymentScreen= ({ route, navigation }) => {
     ).start();
   }, []);
 
-  const formatCardNumber = (text: string) => {
+  const formatCardNumber = (text) => {
     const cleaned = text.replace(/\s/g, '');
     const chunks = cleaned.match(/.{1,4}/g);
     return chunks ? chunks.join(' ') : cleaned;
   };
 
-  const formatExpiryDate = (text: string) => {
+  const formatExpiryDate = (text) => {
     const cleaned = text.replace(/\D/g, '');
     if (cleaned.length >= 2) {
       return cleaned.slice(0, 2) + '/' + cleaned.slice(2, 4);
@@ -65,21 +65,21 @@ const PaymentScreen= ({ route, navigation }) => {
     return cleaned;
   };
 
-  const handleCardNumberChange = (text: string) => {
+  const handleCardNumberChange = (text) => {
     const cleaned = text.replace(/\D/g, '');
     if (cleaned.length <= 16) {
       setCardNumber(formatCardNumber(cleaned));
     }
   };
 
-  const handleExpiryChange = (text: string) => {
+  const handleExpiryChange = (text) => {
     const formatted = formatExpiryDate(text);
     if (formatted.length <= 5) {
       setExpiryDate(formatted);
     }
   };
 
-  const handleCvvChange = (text: string) => {
+  const handleCvvChange = (text) => {
     const cleaned = text.replace(/\D/g, '');
     if (cleaned.length <= 4) {
       setCvv(cleaned);
@@ -148,8 +148,8 @@ const PaymentScreen= ({ route, navigation }) => {
 
   const renderPaymentMethodButton = (
     method: PaymentMethod,
-    icon: string,
-    label: string
+    icon,
+    label
   ) => {
     const isSelected = selectedMethod === method;
     return (

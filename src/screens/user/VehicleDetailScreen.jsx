@@ -59,18 +59,18 @@ const VehicleDetailScreen= ({ route, navigation }) => {
     if (type === 'Rental') {
       navigation.navigate('Rental', { vehicleId: vehicle.id });
     } else {
-      navigation.navigate('Booking', { vehicleId: vehicle.id, bookingType: type });
+      navigation.navigate('Booking', { vehicleId: vehicle.id, bookingType);
     }
   };
 
-  const renderFeatureItem = (feature: string, index: number) => (
+  const renderFeatureItem = (feature, index) => (
     <View key={index} style={styles.featureItem}>
       <Ionicons name="checkmark-circle" size={20} color={colors.success} />
       <Text style={styles.featureText}>{feature}</Text>
     </View>
   );
 
-  const renderSpecItem = (icon: string, label: string, value: string) => (
+  const renderSpecItem = (icon, label, value) => (
     <View style={styles.specCard}>
       <View style={styles.specIcon}>
         <Ionicons name={icon} size={24} color={colors.primary} />
