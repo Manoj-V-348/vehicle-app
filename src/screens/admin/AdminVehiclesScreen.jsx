@@ -27,9 +27,9 @@ const FilterModal= ({
 }) => {
   const [filters, setFilters] = useState(currentFilters);
 
-  const vehicleTypes: (VehicleType | 'All')[] = ['All', 'Car', 'SUV', 'Bike', 'Motorcycle', 'Truck', 'Van'];
+  const vehicleTypes = ['All', 'Car', 'SUV', 'Bike', 'Motorcycle', 'Truck', 'Van'];
   const availabilityOptions = ['All', 'Available', 'Unavailable'];
-  const sortOptions: { label; value: FilterState['sortBy'] }[] = [
+  const sortOptions = [
     { label: 'Name', value: 'name' },
     { label: 'Price', value: 'price' },
     { label: 'Year', value: 'year' },
@@ -137,7 +137,7 @@ const FilterModal= ({
   );
 };
 
-const AdminVehiclesScreen = ({ navigation }: any) => {
+const AdminVehiclesScreen = ({ navigation }) => {
   const [vehicles, setVehicles] = useState(mockVehicles);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterModalVisible, setFilterModalVisible] = useState(false);
@@ -223,7 +223,7 @@ const AdminVehiclesScreen = ({ navigation }: any) => {
 
   const filteredVehicles = getFilteredVehicles();
 
-  const renderVehicleCard = ({ item }: { item: Vehicle }) => (
+  const renderVehicleCard = ({ item }) => (
     <View style={styles.vehicleCard}>
       <Image source={{ uri: item.images[0] }} style={styles.vehicleImage} />
 
