@@ -211,7 +211,7 @@ const AdminDashboardScreen = ({ navigation }: any) => {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Booking Overview</Text>
-            
+            <TouchableOpacity>
               <Text style={styles.seeAllText}>This Month</Text>
             </TouchableOpacity>
           </View>
